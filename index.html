@@ -16,13 +16,16 @@
         header {
             background-color: #f4f4f4;
             padding: 20px;
-            text-align: center;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
         .header-text {
             text-align: left;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            margin-top: 10px;
         }
         nav {
             margin-top: 20px;
@@ -44,13 +47,13 @@
             align-items: center;
         }
         .publication-image {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             margin-right: 20px;
         }
         .profile-image {
-            width: 150px;
+            width: 200px;
             border-radius: 10px;
             margin-left: 20px;
         }
@@ -68,6 +71,10 @@
         <div class="header-text">
             <h1>Nikhil Makkar</h1>
             <p>PhD - Purdue University | GeoAI research - Oak Ridge National Lab</p>
+            <div class="contact-info">
+                <p>Email: nikhilmakkar2345@gmail.com | Phone: +1 (346) 818-0320</p>
+                <p>Google Scholar: <a href="https://scholar.google.com/citations?user=-jwF2q4AAAAJ&hl=en" target="_blank">View Profile</a></p>
+            </div>
         </div>
         <img src="nikhil-profile.jpg" alt="Nikhil Makkar" class="profile-image">
     </header>
@@ -78,10 +85,9 @@
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
     </nav>
     
-     <section id="about">
+    <section id="about">
         <h2>About Me</h2>
         <p>Since 2021, I am at Purdue University working on my PhD. Before coming to Purdue I worked at Oak Ridge National Laboratory on various problems focusing on Geospatial AI with <a href="https://www.ornl.gov/staff-profile/lexie-yang" target="_blank">Dr. Lexie Yang</a> and <a href="https://www.ornl.gov/staff-profile/dalton-d-lunga" target="_blank">Dr. Dalton Lunga</a>.</p>
     </section>
@@ -154,8 +160,6 @@
             </a>
             <p>X. Deng, H. L. Yang, <span class="author-highlight">N. Makkar</span>, and D. Lunga, "<span class="publication-title">Large scale unsupervised domain adaptation of segmentation networks with adversarial learning</span>", in IGARSS 2019-2019 IEEE International Geoscience and Remote Sensing Symposium, IEEE, 2019.</p>
         </div>
-
-<!--         <a href="https://scholar.google.com/citations?user=-jwF2q4AAAAJ&hl=en" target="_blank">View all publications on Google Scholar</a> -->
     </section>
     
     <section id="skills">
@@ -165,13 +169,6 @@
             <li>Deep Learning: PyTorch (proficient), TensorFlow, Keras (skilled)</li>
             <li>Others: Docker Containers, OpenCV, GDAL, QGIS, OpenGL, VTK, Linux</li>
         </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: nikhilmakkar2345@gmail.com</p>
-        <p>Phone: +1 (346) 818-0320</p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=-jwF2q4AAAAJ&hl=en" target="_blank">View Profile</a></p>
     </section>
 </body>
 </html>
