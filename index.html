@@ -14,161 +14,108 @@
             padding: 20px;
         }
         header {
-            background-color: #f4f4f4;
-            padding: 20px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
+            margin-bottom: 2em;
         }
-        .header-text {
-            text-align: left;
+        .profile-info {
+            flex: 1;
         }
-        .contact-info {
-            font-size: 0.9em;
-            margin-top: 10px;
-        }
-        nav {
-            margin-top: 20px;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #1a73e8;
-        }
-        section {
-            margin-top: 40px;
+        .profile-image {
+            width: 200px;
+            height: auto;
+            border-radius: 0;
+            margin-left: 20px;
         }
         h1, h2 {
             color: #2c3e50;
         }
-        .publication {
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
+        a {
+            color: #3498db;
+            text-decoration: none;
         }
-        .publication-image {
+        a:hover {
+            text-decoration: underline;
+        }
+        .research-item {
+            display: flex;
+            margin-bottom: 2em;
+        }
+        .research-image {
             width: 150px;
             height: 150px;
             object-fit: cover;
-            margin-right: 20px;
+            margin-right: 1em;
         }
-        .profile-image {
-            width: 200px;
-            border-radius: 10px;
-            margin-left: 20px;
-        }
-        .author-highlight {
-            font-weight: bold;
-            color: #1a73e8;
-        }
-        .publication-title {
-            font-weight: bold;
+        .research-info {
+            flex: 1;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-text">
+        <div class="profile-info">
             <h1>Nikhil Makkar</h1>
             <p>PhD - Purdue University | GeoAI research - Oak Ridge National Lab</p>
-            <div class="contact-info">
-                <p>Email: nikhilmakkar2345@gmail.com | Phone: +1 (346) 818-0320</p>
-                <p>Google Scholar: <a href="https://scholar.google.com/citations?user=-jwF2q4AAAAJ&hl=en" target="_blank">View Profile</a></p>
-            </div>
+            <p>
+                Email: nikhilmakkar2345@gmail.com | Phone: +1 (346) 818-0320<br>
+                <a href="https://scholar.google.com/citations?user=-jwF2q4AAAAJ&hl=en">Google Scholar</a>
+            </p>
         </div>
         <img src="nikhil-profile.jpg" alt="Nikhil Makkar" class="profile-image">
     </header>
-    
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
-        <a href="#skills">Skills</a>
-    </nav>
-    
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Since 2021, I am at Purdue University working on my PhD. Before coming to Purdue I worked at Oak Ridge National Laboratory on various problems focusing on Geospatial AI with <a href="https://www.ornl.gov/staff-profile/lexie-yang" target="_blank">Dr. Lexie Yang</a> and <a href="https://www.ornl.gov/staff-profile/dalton-d-lunga" target="_blank">Dr. Dalton Lunga</a>.</p>
+        <p>Since 2021, I am at Purdue University working on my PhD. Before coming to Purdue I worked at Oak Ridge National Laboratory on various problems focusing on Geospatial AI with <a href="https://www.ornl.gov/staff-profile/lexie-yang">Dr. Lexie Yang</a> and <a href="https://www.ornl.gov/staff-profile/dalton-d-lunga">Dr. Dalton Lunga</a>.</p>
     </section>
-    
+
     <section id="research">
-        <h2>Research Experience</h2>
-        <ul>
-            <li>
-                <strong>Purdue University</strong> (Aug 2021–Present)<br>
-                Graduate Research Assistant. Focus: Spatio-temporal data analysis, image completion, self-supervised learning, Photogrammetry, Lidar
-            </li>
-            <li>
-                <strong>Oak Ridge National Laboratory</strong> (Jun 2024–Aug 2024)<br>
-                Research Intern - GeoAI. Focus: Geometric regularization of vector data
-            </li>
-            <li>
-                <strong>Oak Ridge National Laboratory</strong> (Jun 2018–May 2021)<br>
-                Research in GeoAI. Focus: Computer Vision, Active Learning, Domain Adaptation, GANs
-            </li>
-        </ul>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>PhD in Civil Engineering/Computer Science</strong> (2021–Present)<br>
-                Purdue University, West Lafayette, USA
-            </li>
-            <li>
-                <strong>MS in Electrical Engineering</strong> (2016–2018)<br>
-                University of Houston, Houston, USA
-            </li>
-            <li>
-                <strong>B.Tech in Instrumentation Engineering</strong> (2010–2014)<br>
-                Kurukshetra University, Kurukshetra, India
-            </li>
-        </ul>
-    </section>
-    
-    <section id="publications">
-        <h2>Selected Publications</h2>
-        <div class="publication">
-            <a href="https://ieeexplore.ieee.org/document/105057731">
-                <img src="activelearning.gif" alt="Boundary-aware adversarial learning paper" class="publication-image">
-            </a>
-            <p>H. L. Yang, <span class="author-highlight">N. Makkar</span>, M. Laverdiere, and A. Rose, "<span class="publication-title">Boundary-aware adversarial learning domain adaption and active learning for cross-sensor building extraction</span>", IEEE Journal of Selected Topics in Earth Observations and Remote Sensing, 2024.</p>
+        <h2>Research</h2>
+        <div class="research-item">
+            <img src="activelearning.gif" alt="Boundary-aware adversarial learning paper" class="research-image">
+            <div class="research-info">
+                <p>H. L. Yang, <strong>N. Makkar</strong>, M. Laverdiere, and A. Rose, "Boundary-aware adversarial learning domain adaption and active learning for cross-sensor building extraction", IEEE Journal of Selected Topics in Earth Observations and Remote Sensing, 2024.</p>
+                <a href="https://ieeexplore.ieee.org/document/10505773">Paper</a>
+            </div>
         </div>
-        <div class="publication">
-            <a href="https://ieeexplore.ieee.org/document/96331852">
-                <img src="adda.gif" alt="Adversarial learning based discriminative domain adaptation paper" class="publication-image">
-            </a>
-            <p><span class="author-highlight">N. Makkar</span>, H. L. Yang, and S. Prasad, "<span class="publication-title">Adversarial learning based discriminative domain adaptation for geospatial image analysis</span>", IEEE Journal of Selected Topics in Earth Observations and Remote Sensing, 2021.</p>
+        <div class="research-item">
+            <img src="adda.gif" alt="Adversarial learning based discriminative domain adaptation paper" class="research-image">
+            <div class="research-info">
+                <p><strong>N. Makkar</strong>, H. L. Yang, and S. Prasad, "Adversarial learning based discriminative domain adaptation for geospatial image analysis", IEEE Journal of Selected Topics in Earth Observations and Remote Sensing, 2021.</p>
+                <a href="https://ieeexplore.ieee.org/document/9633185">Paper</a>
+            </div>
         </div>
-        <div class="publication">
-            <a href="https://ieeexplore.ieee.org/document/9323863">
-                <img src="entropy.gif" alt="Entropy and boundary paper" class="publication-image">
-            </a>
-            <p><span class="author-highlight">N. Makkar</span> and H. L. Yang, "<span class="publication-title">Entropy and boundary based adversarial learning for large scale unsupervised domain adaptation</span>", in IGARSS 2020-2020 IEEE International Geoscience and Remote Sensing Symposium, IEEE, 2020</p>
+        <div class="research-item">
+            <img src="entropy.gif" alt="Entropy and boundary paper" class="research-image">
+            <div class="research-info">
+                <p><strong>N. Makkar</strong> and H. L. Yang, "Entropy and boundary based adversarial learning for large scale unsupervised domain adaptation", in IGARSS 2020-2020 IEEE International Geoscience and Remote Sensing Symposium, IEEE, 2020</p>
+                <a href="https://ieeexplore.ieee.org/document/9323863">Paper</a>
+            </div>
         </div>
-        <div class="publication">
-            <a href="https://ieeexplore.ieee.org/document/92039763">
-                <img src="grave.gif" alt="Learning to count grave sites paper" class="publication-image">
-            </a>
-            <p>D. Lunga, R. Dhamdhere, S. Walters, L. Bragg, <span class="author-highlight">N. Makkar</span>, and M. Urban, "<span class="publication-title">Learning to count grave sites for cemetery observation models with satellite imagery</span>", IEEE Geoscience and Remote Sensing Letters, 2020.</p>
+        <div class="research-item">
+            <img src="grave.gif" alt="Learning to count grave sites paper" class="research-image">
+            <div class="research-info">
+                <p>D. Lunga, R. Dhamdhere, S. Walters, L. Bragg, <strong>N. Makkar</strong>, and M. Urban, "Learning to count grave sites for cemetery observation models with satellite imagery", IEEE Geoscience and Remote Sensing Letters, 2020.</p>
+                <a href="https://ieeexplore.ieee.org/document/9203976">Paper</a>
+            </div>
         </div>
-        <div class="publication">
-            <a href="https://ieeexplore.ieee.org/document/8900277">
-                <img src="deng.gif" alt="unsupervised domain adaptation paper" class="publication-image">
-            </a>
-            <p>X. Deng, H. L. Yang, <span class="author-highlight">N. Makkar</span>, and D. Lunga, "<span class="publication-title">Large scale unsupervised domain adaptation of segmentation networks with adversarial learning</span>", in IGARSS 2019-2019 IEEE International Geoscience and Remote Sensing Symposium, IEEE, 2019.</p>
+        <div class="research-item">
+            <img src="deng.gif" alt="unsupervised domain adaptation paper" class="research-image">
+            <div class="research-info">
+                <p>X. Deng, H. L. Yang, <strong>N. Makkar</strong>, and D. Lunga, "Large scale unsupervised domain adaptation of segmentation networks with adversarial learning", in IGARSS 2019-2019 IEEE International Geoscience and Remote Sensing Symposium, IEEE, 2019.</p>
+                <a href="https://ieeexplore.ieee.org/document/8900277">Paper</a>
+            </div>
         </div>
     </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python (proficient), C/C++</li>
-            <li>Deep Learning: PyTorch (proficient), TensorFlow, Keras (skilled)</li>
-            <li>Others: Docker Containers, OpenCV, GDAL, QGIS, OpenGL, VTK, Linux</li>
-        </ul>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>No specific projects were mentioned in the provided information. You may want to add any relevant projects here.</p>
     </section>
+
+    <footer>
+        <p>Cool sites from Jon Barron's website. Thanks for Leonid Keselman's Jekyll template</p>
+    </footer>
 </body>
 </html>
