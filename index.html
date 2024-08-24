@@ -40,17 +40,17 @@
         a:hover {
             text-decoration: underline;
         }
-        .research-item {
+        .research-item, .project-item {
             display: flex;
             margin-bottom: 2em;
         }
-        .research-image {
+        .research-image, .project-image {
             width: 150px;
             height: 150px;
             object-fit: cover;
             margin-right: 1em;
         }
-        .research-info {
+        .research-info, .project-info {
             flex: 1;
         }
     </style>
@@ -116,11 +116,27 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>Point cloud classification for real world Lidar data. [<a href="#">Article</a>]</li>
-            <li>An interactive visualization of the ruins of Machu Llacta using VTK and PyQt6. [<a href="#">Video</a>], [<a href="#">Code</a>]</li>
-            <li>Impact of transfer learning in extreme change of modality - detecting cancer using CNNs. [<a href="#">Article</a>]</li>
-        </ul>
+        <div class="project-item">
+            <img src="lidar-project.png" alt="Point cloud classification" class="project-image">
+            <div class="project-info">
+                <p>Point cloud classification for real world Lidar data.</p>
+                <a href="https://medium.com/@nikhilmakkar/point-cloud-classification-for-real-world-lidar-data-1d44d98a77c8">Article</a>
+            </div>
+        </div>
+        <div class="project-item">
+            <img src="machu-llacta.png" alt="Machu Llacta visualization" class="project-image">
+            <div class="project-info">
+                <p>An interactive visualization of the ruins of Machu Llacta using VTK and PyQt6.</p>
+                <a href="https://www.youtube.com/watch?v=jjk2Bt0sGAc">Video</a>, <a href="https://github.com/nikhilmakkar/CS530FinalProject?tab=readme-ov-file">Code</a>
+            </div>
+        </div>
+        <div class="project-item">
+            <img src="cnn-cancer.jpg" alt="CNN for cancer detection" class="project-image">
+            <div class="project-info">
+                <p>Impact of transfer learning in extreme change of modality - detecting cancer using CNNs.</p>
+                <a href="https://medium.com/womeninai/classifying-biological-images-using-pre-trained-cnns-102060de0687">Article</a>
+            </div>
+        </div>
     </section>
 
 <!--     <footer>
